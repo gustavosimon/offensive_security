@@ -29,10 +29,12 @@ for i in range(initial_port, final_port):
 # Send the packet and get the first response
 # Send a SYN and wait for a SYN-ACK
     response = sr1(packet, timeout=0.5, verbose=0)
+# If received the response
+    if response != None:
 # If the response has the TCP layer, and the TCP layer represent a SYN-ACK
-    if response.haslayer(TCP) and response.getlayer(TCP).flags == 0x12:
-        print("Port: " + str(i) + " is open\n")
+        if response.haslayer(TCP) and response.getlayer(TCP).flags == 0x12:
+            print("Port: " + str(i) + " is open\n")
 # Send a packet with the RST
-    sr(IP(dst=target_ip)/TCP(dport=response.sport, flags='R'), timeout=0.5, verbose=0)
+        sr(IP(dst=target_ip)/TCP(dport=response.sport, flags='R'), timeout=0.5, verbose=0)
 
 print("Scan is complete")
