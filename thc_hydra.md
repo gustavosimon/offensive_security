@@ -34,9 +34,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-05-16 22:43:
 
 [VERBOSE] Resolving addresses ... [VERBOSE] resolving done
 
-<font color="green">
-[8333][http-get] host: 192.168.1.11   login: admin   password: 12345
-</font>
+<font color="green"> [8333][http-get] host: 192.168.1.11   login: admin   password: 12345 </font>
 
 [STATUS] attack finished for 192.168.1.11 (waiting for children to complete tests)
 
