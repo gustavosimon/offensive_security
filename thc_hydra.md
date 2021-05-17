@@ -1,10 +1,9 @@
 THC Hydra
 
-Ferramenta de cracking de senhas utilizando da técnica de força bruta
-Protocolos de suporte FTP, HTTP, SSH, entre outros
-Código aberto no github, construido na linguagem C
-Pode receber como parâmetro uma lista de senhas para fazer os testes de senha
-e automatizar o processo de teste de senha 
+- Ferramenta de cracking de senhas utilizando da técnica de força bruta
+- Protocolos de suporte FTP, HTTP, SSH, entre outros
+- Código aberto no github, construido na linguagem C
+- Pode receber como parâmetro uma lista de senhas para fazer os testes de senha e automatizar o processo de teste de senha 
 
 Normalmente utilizado em ambientes unix, mas é cross platform
 Pode ser instalado, no Kali Linux vem instalado por padrão
