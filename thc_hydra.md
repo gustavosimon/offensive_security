@@ -3,15 +3,15 @@ THC Hydra
 - Ferramenta de cracking de senhas utilizando da técnica de força bruta
 - Protocolos de suporte FTP, HTTP, SSH, entre outros
 - Código aberto no github, construido na linguagem C
-- Pode receber como parâmetro uma lista de senhas para fazer os testes de senha e automatizar o processo de teste de senha 
+- Pode receber como parâmetro uma lista de senhas a testar para automatizar o processo
 
-Normalmente utilizado em ambientes unix, mas é cross platform
+Normalmente utilizado em ambientes Unix, mas é cross-platform
 
 Pode ser instalado, mas no Kali Linux vem instalado por padrão
 
 Prática realizada: 
 
-Subir um servidor http com sauth no windows (biblioteca python que levanta um server http e autentica a rota raiz):
+Subir um servidor http com sauth no Windows (biblioteca python que levanta um server http e autentica a rota raiz):
 
 - sauth admin 12345
 
@@ -34,7 +34,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-05-16 22:43:
 
 [VERBOSE] Resolving addresses ... [VERBOSE] resolving done
 
+<font color="green">
 [8333][http-get] host: 192.168.1.11   login: admin   password: 12345
+</font>
 
 [STATUS] attack finished for 192.168.1.11 (waiting for children to complete tests)
 
